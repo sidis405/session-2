@@ -12,6 +12,7 @@ class OfferResource extends JsonResource
             'name' => $this->name,
             'user_id' => $this->user_id,
             'contracts' => ContractResource::collection($this->whenLoaded('contracts')),
+            'user' => new UserMiniResource($this->whenLoaded('user')),
         ];
     }
 }
