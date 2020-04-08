@@ -1,6 +1,6 @@
 <?php
 
-namespace Acme\Api\Http\Controllers;
+namespace Acme\Web\Http\Controllers;
 
 use Acme\Domain\Models\User;
 use App\Http\Controllers\Controller;
@@ -18,7 +18,7 @@ class UsersController extends Controller
 
     public function index()
     {
-        return UserResource::collection($this->usersRepo->getAll('offers.contracts'));
+        return $this->usersRepo->getAll();
     }
 
     public function show(User $user)
