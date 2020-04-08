@@ -18,3 +18,11 @@
 - Impostazione test suite coverage
     - pcov
     - custom exception formatter
+- Different Auth Guard
+
+
+- User
+    - hasMany Offer
+        - hasMany Contract
+- Offer
+- Contract
