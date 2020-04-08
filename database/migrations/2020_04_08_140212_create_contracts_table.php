@@ -15,6 +15,7 @@ class CreateContractsTable extends Migration
     {
         Schema::create('contracts', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->unsignedInteger('offer_id');
             $table->string('name');
             $table->timestamps();

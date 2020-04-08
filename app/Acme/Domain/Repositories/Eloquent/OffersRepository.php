@@ -1,11 +1,12 @@
 <?php
 
-namespace Acme\Domain\Repositories;
+namespace Acme\Domain\Repositories\Eloquent;
 
 use Acme\Domain\Models\Offer;
 use Illuminate\Database\Eloquent\Collection;
+use Acme\Domain\Repositories\Contracts\OffersRepositoryContract;
 
-class OffersRepository
+class OffersRepository implements OffersRepositoryContract
 {
     public function getAll(...$relations): Collection
     {

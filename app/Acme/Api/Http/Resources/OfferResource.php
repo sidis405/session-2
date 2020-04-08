@@ -9,8 +9,8 @@ class OfferResource extends JsonResource
     public function toArray($request)
     {
         return [
+            'uuid' => $this->uuid,
             'name' => $this->name,
-            'user_id' => $this->user_id,
             'contracts' => ContractResource::collection($this->whenLoaded('contracts')),
             'user' => new UserMiniResource($this->whenLoaded('user')),
         ];

@@ -4,13 +4,13 @@ namespace Acme\Web\Http\Controllers;
 
 use Acme\Domain\Models\User;
 use App\Http\Controllers\Controller;
-use Acme\Domain\Repositories\UsersRepository;
+use Acme\Domain\Repositories\Contracts\UsersRepositoryContract;
 
 class UsersController extends Controller
 {
     protected $usersRepo;
 
-    public function __construct(UsersRepository $usersRepo)
+    public function __construct(UsersRepositoryContract $usersRepo)
     {
         $this->usersRepo = $usersRepo;
     }

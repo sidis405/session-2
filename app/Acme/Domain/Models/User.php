@@ -2,6 +2,7 @@
 
 namespace Acme\Domain\Models;
 
+use Acme\Domain\Models\Traits\HasUuid;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -9,6 +10,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
+    use HasUuid;
 
     protected $guarded = [];
 

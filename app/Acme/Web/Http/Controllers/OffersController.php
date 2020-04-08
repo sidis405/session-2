@@ -4,10 +4,11 @@ namespace Acme\Web\Http\Controllers;
 
 use Acme\Domain\Models\Offer;
 use App\Http\Controllers\Controller;
+use Acme\Domain\Repositories\Contracts\OffersRepositoryContract;
 
 class OffersController extends Controller
 {
-    public function __construct(OffersRepository $offersRepo)
+    public function __construct(OffersRepositoryContract $offersRepo)
     {
         $this->offersRepo = $offersRepo;
     }

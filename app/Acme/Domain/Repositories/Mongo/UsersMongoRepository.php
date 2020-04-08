@@ -1,11 +1,12 @@
 <?php
 
-namespace Acme\Domain\Repositories;
+namespace Acme\Domain\Repositories\Mongo;
 
 use Acme\Domain\Models\User;
 use Illuminate\Database\Eloquent\Collection;
+use Acme\Domain\Repositories\Contracts\UsersRepositoryContract;
 
-class UsersRepository
+class UsersMongoRepository implements UsersRepositoryContract
 {
     public function getAll(...$relations): Collection
     {
