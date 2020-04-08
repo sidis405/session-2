@@ -23,6 +23,6 @@ class UsersController extends Controller
 
     public function show(User $user)
     {
-        return new UserResource($user->load('offers.contracts'));
+        return new UserResource($this->usersRepo->getOne($user, 'offers.contracts'));
     }
 }
