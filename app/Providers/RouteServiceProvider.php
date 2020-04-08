@@ -14,7 +14,9 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'App\Http\Controllers';
+    protected $defaultNamespace = 'App\Http\Controllers';
+    protected $apiNamespace = 'Acme\Api\Http\Controllers';
+    protected $webNamespace = 'Acme\Web\Http\Controllers';
 
     /**
      * The path to the "home" route for your application.
@@ -44,9 +46,18 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapApiRoutes();
 
+        $this->mapAuthRoutes();
+
         $this->mapWebRoutes();
 
         //
+    }
+
+    protected function mapAuthRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->defaultNamespace)
+            ->group(base_path('routes/auth.php'));
     }
 
     /**
@@ -59,7 +70,7 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapWebRoutes()
     {
         Route::middleware('web')
-            ->namespace($this->namespace)
+            ->namespace($this->webNamespace)
             ->group(base_path('routes/web.php'));
     }
 
@@ -74,7 +85,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::prefix('api')
             ->middleware('api')
-            ->namespace($this->namespace)
+            ->namespace($this->apiNamespace)
             ->group(base_path('routes/api.php'));
     }
 }
