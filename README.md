@@ -20,6 +20,10 @@ https://marmelab.com/phpunit-d3-report/
 [ ] Impostazione test suite coverage
     [x] pcov
     [x] custom exception formatter
+    [x] mail sending
+    [ ] job queing
+    [ ] event firing
+    [ ] middleware execution
 [ ] Different Auth Guard
 
 
