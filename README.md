@@ -1,5 +1,7 @@
 ## Todo
 
+https://marmelab.com/phpunit-d3-report/
+
 [ ] Web
 [ ] Api
     [ ] Auth
@@ -16,8 +18,8 @@
 [x] Custom Namespaces
 [x] UUID
 [ ] Impostazione test suite coverage
-    [ ] pcov
-    [ ] custom exception formatter
+    [x] pcov
+    [x] custom exception formatter
 [ ] Different Auth Guard
 
 

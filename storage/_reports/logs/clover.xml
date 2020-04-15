@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1586959761">
-  <project timestamp="1586959761">
+<coverage generated="1586964379">
+  <project timestamp="1586964379">
     <package name="Acme\Api\Http\Controllers">
       <file name="/Users/sid/Code/web/bitsense/app/Acme/Api/Http/Controllers/OffersController.php">
         <class name="Acme\Api\Http\Controllers\OffersController" namespace="Acme\Api\Http\Controllers">
@@ -94,13 +94,17 @@
       </file>
       <file name="/Users/sid/Code/web/bitsense/app/Acme/Domain/Models/User.php">
         <class name="Acme\Domain\Models\User" namespace="Acme\Domain\Models">
-          <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+          <metrics complexity="4" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="8" coveredelements="6"/>
         </class>
-        <line num="23" type="method" name="offers" visibility="public" complexity="1" crap="1" count="4"/>
-        <line num="25" type="stmt" count="4"/>
-        <line num="28" type="method" name="contracts" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <metrics loc="32" ncloc="32" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="1" elements="4" coveredelements="2"/>
+        <line num="24" type="method" name="offers" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="26" type="stmt" count="4"/>
+        <line num="29" type="method" name="contracts" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="34" type="method" name="getOtherUser" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="39" type="method" name="getName" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <metrics loc="43" ncloc="43" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="8" coveredelements="6"/>
       </file>
     </package>
     <package name="Acme\Domain\Models\Traits">
@@ -108,10 +112,10 @@
         <class name="HasUuid" namespace="Acme\Domain\Models\Traits">
           <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="10" coveredelements="10"/>
         </class>
-        <line num="9" type="method" name="bootHasUuid" visibility="public" complexity="1" crap="1" count="4"/>
-        <line num="12" type="stmt" count="4"/>
-        <line num="13" type="stmt" count="4"/>
-        <line num="14" type="stmt" count="4"/>
+        <line num="9" type="method" name="bootHasUuid" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="12" type="stmt" count="6"/>
+        <line num="13" type="stmt" count="6"/>
+        <line num="14" type="stmt" count="6"/>
         <line num="16" type="method" name="getArrayableItems" visibility="protected" complexity="2" crap="2" count="2"/>
         <line num="18" type="stmt" count="2"/>
         <line num="19" type="stmt" count="2"/>
@@ -126,17 +130,17 @@
         <class name="Acme\Domain\Providers\AcmeRepositoriesProvider" namespace="Acme\Domain\Providers">
           <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="8" elements="11" coveredelements="8"/>
         </class>
-        <line num="11" type="method" name="boot" visibility="public" complexity="2" crap="2.03" count="4"/>
-        <line num="13" type="stmt" count="4"/>
-        <line num="15" type="stmt" count="4"/>
-        <line num="17" type="stmt" count="4"/>
+        <line num="11" type="method" name="boot" visibility="public" complexity="2" crap="2.03" count="6"/>
+        <line num="13" type="stmt" count="6"/>
+        <line num="15" type="stmt" count="6"/>
+        <line num="17" type="stmt" count="6"/>
         <line num="18" type="stmt" count="0"/>
         <line num="19" type="stmt" count="0"/>
-        <line num="21" type="stmt" count="4"/>
-        <line num="22" type="stmt" count="4"/>
-        <line num="25" type="stmt" count="4"/>
-        <line num="26" type="stmt" count="4"/>
-        <line num="27" type="stmt" count="4"/>
+        <line num="21" type="stmt" count="6"/>
+        <line num="22" type="stmt" count="6"/>
+        <line num="25" type="stmt" count="6"/>
+        <line num="26" type="stmt" count="6"/>
+        <line num="27" type="stmt" count="6"/>
         <metrics loc="28" ncloc="28" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="8" elements="11" coveredelements="8"/>
       </file>
     </package>
@@ -250,6 +254,6 @@
         <metrics loc="27" ncloc="27" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
       </file>
     </package>
-    <metrics files="21" loc="490" ncloc="470" classes="19" methods="37" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="74" coveredstatements="32" elements="111" coveredelements="45"/>
+    <metrics files="21" loc="501" ncloc="481" classes="19" methods="39" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="76" coveredstatements="34" elements="115" coveredelements="49"/>
   </project>
 </coverage>

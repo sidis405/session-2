@@ -16,7 +16,7 @@ class UsersController extends Controller
         $this->usersRepo = $usersRepo;
     }
 
-    public function index()
+    public function index(UsersRepositoryContract $usersRepo)
     {
         return UserResource::collection($this->usersRepo->getAll('offers.contracts'));
     }

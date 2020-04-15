@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="6" assertions="30" errors="0" warnings="0" failures="0" skipped="0" time="2.276205">
+    <testsuite name="Unit" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="2.135935">
+      <testsuite name="Tests\Unit\Domain\Models\UserTest" file="/Users/sid/Code/web/bitsense/tests/Unit/Domain/Models/UserTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="2.135935">
+        <testcase name="user_has_many_contracts_through_offers" class="Tests\Unit\Domain\Models\UserTest" classname="Tests.Unit.Domain.Models.UserTest" file="/Users/sid/Code/web/bitsense/tests/Unit/Domain/Models/UserTest.php" line="33" assertions="2" time="2.135935"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="5" assertions="28" errors="0" warnings="0" failures="0" skipped="0" time="0.140270">
+      <testsuite name="Tests\Feature\Api\UsersTest" file="/Users/sid/Code/web/bitsense/tests/Feature/Api/UsersTest.php" tests="3" assertions="15" errors="0" warnings="0" failures="0" skipped="0" time="0.087140">
+        <testcase name="it_lists_all_users" class="Tests\Feature\Api\UsersTest" classname="Tests.Feature.Api.UsersTest" file="/Users/sid/Code/web/bitsense/tests/Feature/Api/UsersTest.php" line="20" assertions="11" time="0.038767"/>
+        <testcase name="it_shows_a_single_user" class="Tests\Feature\Api\UsersTest" classname="Tests.Feature.Api.UsersTest" file="/Users/sid/Code/web/bitsense/tests/Feature/Api/UsersTest.php" line="45" assertions="2" time="0.018190"/>
+        <testcase name="trying_mocking_ideas" class="Tests\Feature\Api\UsersTest" classname="Tests.Feature.Api.UsersTest" file="/Users/sid/Code/web/bitsense/tests/Feature/Api/UsersTest.php" line="57" assertions="2" time="0.030183"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Web\UsersTest" file="/Users/sid/Code/web/bitsense/tests/Feature/Web/UsersTest.php" tests="2" assertions="13" errors="0" warnings="0" failures="0" skipped="0" time="0.053130">
+        <testcase name="it_lists_all_users" class="Tests\Feature\Web\UsersTest" classname="Tests.Feature.Web.UsersTest" file="/Users/sid/Code/web/bitsense/tests/Feature/Web/UsersTest.php" line="14" assertions="11" time="0.029761"/>
+        <testcase name="it_shows_a_single_user" class="Tests\Feature\Web\UsersTest" classname="Tests.Feature.Web.UsersTest" file="/Users/sid/Code/web/bitsense/tests/Feature/Web/UsersTest.php" line="28" assertions="2" time="0.023369"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -17,6 +17,7 @@ class CreateContractsTable extends Migration
             $table->id();
             $table->uuid('uuid');
             $table->unsignedInteger('offer_id');
+            $table->unsignedInteger('user_id')->nullable();
             $table->string('name');
             $table->timestamps();
         });
